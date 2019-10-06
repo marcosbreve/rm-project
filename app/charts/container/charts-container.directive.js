@@ -17,6 +17,10 @@ angular.module('rimSmartApp.charts')
             size: '',
           });
 
+          $scope.delete = function() {
+            $scope.chartId = 0;
+          }
+
           modalInstance.result.then(function (response) {
               console.log(response.id);
               $scope.chartId = response.id; 
