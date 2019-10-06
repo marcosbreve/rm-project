@@ -42,3 +42,8 @@
 .charts-more-btn {
   float: right;
 }
+
+.btn-charts {
+  border: none;
+  background-color: #fff;
+}
