@@ -2,7 +2,10 @@ angular.module('rimSmartApp.charts')
   .directive('chartsContainer', function () {
     return {
       restrict: 'E',
-      scope: {},
+      scope: {
+        title: '@'
+      },
+      
       templateUrl: 'charts/container/charts-container.html',
       link: function ($scope, element, attrs) { },
       controller: function ($scope, $compile, $uibModal) {

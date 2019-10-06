@@ -1,16 +1,16 @@
 angular.module('rimSmartApp.charts')
-  .directive('numberCorrespondence', function () {
+  .directive('tasksFavorites', function () {
     return {
       restrict: 'E',
       scope: {
         title: '@'
       },
-      templateUrl: 'charts/number-correspondence/number-correspondence.html',
+      templateUrl: 'charts/tasks-favorites/tasks-favorites.html',
       link: function ($scope, element, attrs) { },
       controller: function ($scope, $compile) {
-        $scope.title = 'Number of Correspondence';
+        $scope.title = 'Tasks & Favorites';
         var columnDefs = [
-          { headerName: "Task", field: "tasl" },
+          { headerName: "Task", field: "task" },
           { headerName: "Role", field: "role" },
           { headerName: "Due Date", field: "duedate" },
           { headerName: "Status", field: "status" },
