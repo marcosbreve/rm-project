@@ -1,0 +1,29 @@
+<div class="modal-header">
+  <div class="pull-left">
+    <h4 class="bold">Manage Charts</h4>
+  </div>
+  <div class="pull-right">
+  </div>
+</div>
+<div class="modal-body">
+  <ul class="charts-list">
+    <li ng-repeat="chart in charts" class="thumbnail">
+      <div class="row">
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-8">
+          <div class="bold">
+            {{chart.name}}
+          </div>
+          <div>
+            {{chart.description}}
+          </div>
+        </div>
+        <div class="col-md-2 center-div">
+          <button class="btn btn-sm" ng-click="add(chart)">Add</button> 
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+<div class="charts-box">
+  <div class="box">
+    <div class="row header">
+      <div class="pull-right">
+        <button ng-show="chartId !== 0" class="btn btn-sm">...</button>
+      </div>
+    </div>
+    <div class="row content">
+        <a ng-show="chartId === 0" href="#"" ng-click=" open()" style="margin: 15px;">Add Chart</a>
+        <charts-number-correspondence ng-show="chartId === 1"></charts-number-correspondence>
+    </div>
+  </div>
+</div>
