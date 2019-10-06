@@ -10,18 +10,18 @@ angular.module('rimSmartApp.charts')
       controller: function ($scope, $compile) {
         $scope.title = 'Number of Correspondence';
         var columnDefs = [
-          { headerName: "Task", field: "tasl" },
-          { headerName: "Role", field: "role" },
+          { headerName: "Title", field: "title" },
           { headerName: "Due Date", field: "duedate" },
-          { headerName: "Status", field: "status" },
-          { headerName: "Product", field: "product" },
         ];
 
         var rowData = [
-          { task: "Commitment", role: "Reviewer", duedate: "10-JUL-2019", status: "In Review", product: "Lorem ipsum" },
-          { task: "Commitment", role: "Reviewer", duedate: "10-JUL-2019", status: "In Review", product: "Lorem ipsum" },
-          { task: "Document", role: "Publisher", duedate: "10-OCT-2019", status: "In Publish", product: "Lorem ipsum" },
-          
+          { title: "Title of commitments", duedate: '12-JUL-2020' },
+          { title: "Title of commitments", duedate: '12-AUG-2020' },
+          { title: "Title of commitments", duedate: '12-AUG-2020' },
+          { title: "Title of commitments", duedate: '12-SEP-2020' },
+          { title: "Title of commitments", duedate: '12-OCT-2020' },
+          { title: "Title of commitments", duedate: '12-NOV-2020' },
+          { title: "Title of commitments", duedate: '12-NOV-2020' },
         ];
 
         $scope.gridOptions = {

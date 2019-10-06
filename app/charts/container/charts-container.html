@@ -5,11 +5,14 @@
         <button ng-show="chartId !== 0" class="btn btn-sm">...</button>
       </div>
     </div> -->
-    <div class="row content" ng-show="chartId === 0" >
-        <a href="#"" ng-click=" open()" style="margin: 15px;">Add Chart</a>
+    <div class="charts-more-btn" ng-show="chartId !== 0">
+      <button class="btn btn-sm">...</button>
+    </div>
+    <div class="row content" ng-show="chartId === 0">
+      <a href="#" ng-click=" open()" style="margin: 15px;">Add Chart</a>
     </div>
     <my-open-commitments ng-show="chartId === 1"></my-open-commitments>
-    <number-correspondence ng-show="chartId === 2"></number-correspondence>
-    <task-favorites ng-show="chartId === 3"></task-favorites>
+    <number-correspondence ng-show="chartId === 3"></number-correspondence>
+    <tasks-favorites ng-show="chartId === 2"></tasks-favorites>
   </div>
 </div>

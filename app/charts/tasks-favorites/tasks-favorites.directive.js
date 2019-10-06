@@ -23,7 +23,7 @@ angular.module('rimSmartApp.charts')
           { task: "Document", role: "Publisher", duedate: "10-OCT-2019", status: "In Publish", product: "Lorem ipsum" },
           
         ];
-
+        
         $scope.gridOptions = {
           columnDefs: columnDefs,
           rowData: rowData
